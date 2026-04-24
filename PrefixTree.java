@@ -23,7 +23,7 @@ class PrefixTree {
 			while (hasNextLine()) {
 				String data = myReader.nextLine();
 				preOrderString += data;
-				System.out.println("preOrderString);
+				System.out.println(preOrderString);
 			}
 			wordString += data.nextLine();
 		} catch (FileNotFoundException e) {
