@@ -25,7 +25,7 @@ class PrefixTree {
 				preOrderString = data;
 				System.out.println(preOrderString);
 			}
-			wordString = data.nextLine();
+			wordString = Read.nextLine();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");
 		}
