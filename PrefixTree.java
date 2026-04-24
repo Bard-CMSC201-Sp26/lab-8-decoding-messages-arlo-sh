@@ -22,10 +22,10 @@ class PrefixTree {
 		try (Scanner Read = new Scanner(preOrder)) {
 			while (myReader.hasNextLine()) {
 				String data = myReader.nextLine();
-				preOrderString += data;
+				preOrderString = data;
 				System.out.println(preOrderString);
 			}
-			wordString += data.nextLine();
+			wordString = data.nextLine();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");
 		}
