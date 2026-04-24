@@ -19,7 +19,7 @@ class PrefixTree {
 		File preOrder = new File("abra.txt");
 		String preOrderString = "";
 		String wordString = "";
-		try (Scanner Read = new Scanner(f)) {
+		try (Scanner Read = new Scanner(preOrder)) {
 			while (hasNextLine()) {
 				String data = myReader.nextLine();
 				preOrderString += data;
