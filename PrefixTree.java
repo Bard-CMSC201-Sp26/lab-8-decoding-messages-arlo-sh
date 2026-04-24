@@ -20,8 +20,8 @@ class PrefixTree {
 		String preOrderString = "";
 		String wordString = "";
 		try (Scanner Read = new Scanner(preOrder)) {
-			while (myReader.hasNextLine()) {
-				String data = myReader.nextLine();
+			while (Read.hasNextLine()) {
+				String data = Read.nextLine();
 				preOrderString = data;
 				System.out.println(preOrderString);
 			}
