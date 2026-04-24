@@ -23,7 +23,9 @@ class PrefixTree {
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");
 		}
-		System.out.println("Order: " + order);
-		System.out.println("Code: " + code);
+		System.out.println("Order: ");
+		System.out.print(order);
+		System.out.println("Code: ");
+		System.out.print(code);
     }
 }
