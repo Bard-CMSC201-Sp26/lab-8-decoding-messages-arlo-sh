@@ -16,10 +16,11 @@ class PrefixTree {
 	public static void main(String[] args) {
 		PrefixTree tree = new PrefixTree();				// new tree
 		File preOrder = new File("abra.txt");
-		
+		String order;
+		String code;
 		try (Scanner Read = new Scanner(preOrder)) {
-			String order = Read.nextLine();
-			String code = Read.nextLine();
+			order = Read.nextLine();
+			code = Read.nextLine();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");
 		}
