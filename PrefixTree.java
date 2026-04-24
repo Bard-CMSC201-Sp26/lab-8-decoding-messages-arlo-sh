@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.List;
 
 class PrefixTree {
 	private Node root;
@@ -15,19 +14,16 @@ class PrefixTree {
 	}
 	
 	public static void main(String[] args) {
-		PrefixTree tree = new PrefixTree();
+		PrefixTree tree = new PrefixTree();				// new tree
 		File preOrder = new File("abra.txt");
-		String preOrderString = "";
-		String wordString = "";
+		
 		try (Scanner Read = new Scanner(preOrder)) {
-			while (Read.hasNextLine()) {
-				String data = Read.nextLine();
-				preOrderString = data;
-				System.out.println(preOrderString);
-			}
-			wordString = Read.nextLine();
+			String order = Read.nextLine();
+			String code = Read.nextLine();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");
 		}
+		System.out.println("Order: " + order);
+		System.out.println("Code: " + code);
     }
 }
