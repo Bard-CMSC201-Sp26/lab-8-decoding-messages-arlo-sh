@@ -43,7 +43,7 @@ class PrefixTree {
 	
 	    // Check if it's a leaf node
 	    if (node.c != '*') {
-	        System.out.println("    " + node.c + "      " + path.length() + "      " + path);
+	        System.out.println("    " + node.c + "         " + path.length() + "         " + path);
 	        return;
 	    }
 	    getEncodings(node.left, path + "0");	// 0 = left
