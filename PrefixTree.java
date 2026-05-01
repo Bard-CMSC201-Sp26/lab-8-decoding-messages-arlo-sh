@@ -77,11 +77,11 @@ class PrefixTree {
 	
 	    int numOfBitsRead = bits.length();
 	    int numOfChars = decoded.length();
-	    double compressionFactor = (double) bitsRead / charCount;
+	    double compressesion = (double) numOfBitsRead / numOfChars;
 	
-	    System.out.println("Bits read: " + bitsRead);
-	    System.out.println("Characters: " + charCount);
-	    System.out.printf("Compression factor: %.2f\n", compressionFactor);
+	    System.out.println("Bits read: " + numOfBitsRead);
+	    System.out.println("Characters: " + numOfChars);
+	    System.out.printf("Compression factor: %.2f\n", compressesion);
 	}
 	
 	public static void main(String[] args) {
