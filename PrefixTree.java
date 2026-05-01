@@ -49,6 +49,40 @@ class PrefixTree {
 	    getEncodings(node.left, path + "0");	// 0 = left
 	    getEncodings(node.right, path + "1");	// 1 = right
 	}
+
+	public void decode(String bits) {
+	    Node current = root;
+	    StringBuilder decoded = new StringBuilder();
+	
+	    for (int i = 0; i < bits.length(); i++) {
+	        char bit = bits.charAt(i);
+	
+	        if (bit == '0') {
+	            current = current.left;
+	        } else if (bit == '1') {
+	            current = current.right;
+	        } else {
+				// if anything other than 0 or 1 is in "code"
+	            throw new IllegalArgumentException("Invalid bit: " + bit);
+	        }
+	
+	        // found leaf node
+	        if (current.c != '*') {
+	            decoded.append(current.c);
+	            current = root; // reset
+	        }
+	    }
+		
+	    System.out.println("Decoded message:" + decoded.toString());	// OUTPUT
+	
+	    int numOfBitsRead = bits.length();
+	    int numOfChars = decoded.length();
+	    double compressionFactor = (double) bitsRead / charCount;
+	
+	    System.out.println("Bits read: " + bitsRead);
+	    System.out.println("Characters: " + charCount);
+	    System.out.printf("Compression factor: %.2f\n", compressionFactor);
+	}
 	
 	public static void main(String[] args) {
 		PrefixTree tree;			// new tree
