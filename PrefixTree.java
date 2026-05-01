@@ -64,9 +64,9 @@ class PrefixTree {
 
 		tree = new PrefixTree(order);	// builds new tree
 		
-		System.out.println("Order: ");
-		System.out.print(order);
-		System.out.println("Code: ");
-		System.out.print(code);
+		System.out.print("Order: ");
+		System.out.println(order);
+		System.out.print("Code: ");
+		System.out.println(code);
     }
 }
