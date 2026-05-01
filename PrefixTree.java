@@ -104,5 +104,6 @@ class PrefixTree {
 		System.out.println(code);
 
 		tree.getEncodings();
+		tree.decode(code);
     }
 }
