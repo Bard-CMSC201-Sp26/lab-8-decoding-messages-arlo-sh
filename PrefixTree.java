@@ -68,5 +68,7 @@ class PrefixTree {
 		System.out.println(order);
 		System.out.print("Code: ");
 		System.out.println(code);
+
+		tree.getEncodings();
     }
 }
