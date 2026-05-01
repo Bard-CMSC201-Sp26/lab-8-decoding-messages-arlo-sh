@@ -13,6 +13,7 @@ Part 1:
 
 Part 2:
   -  Create a PrefixTree constructor to read in preorder traversal txt
+      -  Self, Entire Left Subtree, Entire Right Subtree (recursively)
   -  Create a tree
       -  left is 0
       -  right is 1
@@ -22,7 +23,7 @@ Part 2:
       -  d = 1010
       -  r = 110
       -  ! = 100
-      -  '*' indicates node has children
+      -  '*' indicates node has exactly 2
   -  Create a main method
   -  Use Scanner or StdIn to read code
 
